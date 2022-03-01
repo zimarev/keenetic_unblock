@@ -6,7 +6,7 @@ opkg install busybox cron wget
 
 echo "Creating directory structure"
 cd /storage || echo "Directory /storage not found"
-mkdir unblocker
+mkdir -p unblocker
 
 echo "Downloading files"
 wget -O /storage/unblocker/unblock.txt https://raw.githubusercontent.com/zimarev/keenetic_unblock/master/unblock.txt
