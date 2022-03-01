@@ -5,7 +5,7 @@ opkg update
 opkg install busybox cron wget
 
 echo "Creating directory structure"
-cd /storage || echo "Directory /storage not found" && exit
+cd /storage || echo "Directory /storage not found"
 mkdir unblocker
 
 echo "Downloading files"
