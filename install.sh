@@ -9,8 +9,8 @@ cd /storage || echo "Directory /storage not found"
 mkdir -p unblocker
 
 echo "Downloading files"
-wget -O /storage/unblocker/unblock.txt https://raw.githubusercontent.com/zimarev/keenetic_unblock/master/unblock.txt
-wget -O /storage/unblocker/unblock.sh https://raw.githubusercontent.com/zimarev/keenetic_unblock/master/unblock.sh
+curl -s https://raw.githubusercontent.com/zimarev/keenetic_unblock/master/unblock.txt > /storage/unblocker/unblock.txt 
+curl -s https://raw.githubusercontent.com/zimarev/keenetic_unblock/master/unblock.sh > /storage/unblocker/unblock.sh
 chmod +x /storage/unblocker/unblock.sh
 
 echo "Creating link to cron"
