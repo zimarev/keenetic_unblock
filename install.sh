@@ -2,7 +2,7 @@
 
 echo "Installing packages"
 opkg update
-opkg install busybox cron wget
+opkg install busybox cron curl
 
 echo "Creating directory structure"
 cd /storage || echo "Directory /storage not found"
